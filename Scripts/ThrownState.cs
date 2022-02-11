@@ -2,8 +2,10 @@ using UnityEngine;
 
 namespace HedronStateMachine
 {
+    // State in which the hedron is thrown by the throwing player.
     public class ThrownState : HedronState
     {
+        // broadcasts events for the GameManager.
         public delegate void ScoreAction(int amount);
         public static event ScoreAction OnScore;
         public delegate void DeadAction();

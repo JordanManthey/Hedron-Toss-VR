@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace HedronStateMachine
 {
+    // State in which hedron is out-of-play or the turn if over.
     public class DeadState : HedronState
     {
         public DeadState()

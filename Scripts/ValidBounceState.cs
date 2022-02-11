@@ -2,8 +2,10 @@ using UnityEngine;
 
 namespace HedronStateMachine
 {
+    // State in which the hedron has landed on the opponents table from a valid throw.
     public class ValidBounceState : HedronState
     {
+        // broadcasts events for the GameManager.
         public delegate void ScoreAction(int amount);
         public static event ScoreAction OnScore;
         public delegate void CatchAction();

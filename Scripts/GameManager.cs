@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using HedronStateMachine;
 using UnityEngine;
 
@@ -10,11 +8,13 @@ public class GameManager : MonoBehaviour
     private int _playerTurn;
     private int[] _gameScore;
 
+    // Invokes the next player's turn.
     public void SwitchTurns()
     {
         _playerTurn = (_playerTurn + 1) % _numPlayers;
     }
 
+    // Incements the throwing team's score.
     public void Score(int amount)
     {
         if (_playerTurn <= (_numPlayers / 2)) {
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         SwitchTurns();
     }
 
+    // Subscribes this GameManager to the HedronState events that dictate gameflow.
     private void OnEnable()
     {
         ValidBounceState.OnScore += Score;
