@@ -22,11 +22,11 @@ public class Hedron : MonoBehaviour
         }
     }
 
-    // Bounces the hedron in a direction between the provided bounceObject's boundaries.
+    // Bounces the hedron in a direction between the bounceObject's boundaries.
     // The direction is randomly chosen from a normal distribution between the boundaries.
     public void Bounce(GameObject bounceObject)
     {
-        if (transform.childCount > 1)
+        if (bounceObject.transform.childCount > 1)
         {
             // This bounceObject's left and right boundaries to bounce the hedron through.
             Transform leftBound = bounceObject.transform.GetChild(0);
