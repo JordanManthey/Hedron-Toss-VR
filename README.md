@@ -1,5 +1,5 @@
 # Hedron-Toss-VR
-A repository showing a subset of the codebase for my VR game, Hedron Toss. This source code highlights the core game development patterns and techniques used to drive the game.
+This is a code sample from my VR game, Hedron Toss. These classes highlight some of the core game development patterns and techniques used to drive the game.
 
 Summary Notes:
 
