@@ -1,5 +1,5 @@
 # Hedron-Toss-VR
-This is a code sample from my VR game, Hedron Toss. These classes highlight some of the core game development patterns and techniques used to drive the game.
+This is a code sample from my VR game, Hedron Toss. These classes highlight some of the core game development patterns and techniques used for the game.
 
 Summary Notes:
 
